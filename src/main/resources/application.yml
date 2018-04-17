@@ -1,0 +1,15 @@
+debug: false
+
+---
+spring.profiles: debug
+logging:
+  level:
+    reactor.ipc.netty.channel.ChannelOperationsHandler: DEBUG
+    reactor.ipc.netty.http.server.HttpServer: DEBUG
+    reactor.ipc.netty.http.client: DEBUG
+    io.reactivex.netty.protocol.http.client: DEBUG
+    io.netty.handler: DEBUG
+    io.netty.handler.proxy.HttpProxyHandler: DEBUG
+    io.netty.handler.proxy.ProxyHandler: DEBUG
+    org.springframework.web.reactive.function.client: DEBUG
+    reactor.ipc.netty.channel: DEBUG
